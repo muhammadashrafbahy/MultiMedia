@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="compression.CompressionController">
+    <stylesheets>
+        <URL value="@compression.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="in_str" layoutX="238.0" layoutY="35.0" onAction="#enter" promptText="Enter Your String" />
+      <Button fx:id="run_length" layoutX="37.0" layoutY="100.0" mnemonicParsing="false" onAction="#run_length" text="Run Length" />
+      <Button fx:id="HuffmanCode" layoutX="155.0" layoutY="100.0" mnemonicParsing="false" onAction="#HuffmanCode" text="HuffmanCode" />
+      <Button fx:id="lzw" layoutX="292.0" layoutY="100.0" mnemonicParsing="false" onAction="#lzw" text="LZW" />
+      <Button fx:id="shannonfano" layoutX="375.0" layoutY="100.0" mnemonicParsing="false" onAction="#shannonfano" text="ShannonFano" />
+      <Button fx:id="arth" layoutX="507.0" layoutY="100.0" mnemonicParsing="false" onAction="#arth" text="Arithmetic" />
+      <Label fx:id="output" layoutX="220.0" layoutY="183.0" />
+      <Button fx:id="runlen_decompress" layoutX="37.0" layoutY="333.0" mnemonicParsing="false" onAction="#runlen_decompress" text="run length Decompress" />
+      <Label fx:id="output2" layoutX="220.0" layoutY="222.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="multimedia.RGB_YUV_controllers">
+   <children>
+      <ImageView id="bfr_img" fx:id="bfr_img" fitHeight="245.0" fitWidth="581.0" layoutX="84.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="12.0" />
+      <ImageView id="aftr_img" fx:id="aftr_img" fitHeight="252.0" fitWidth="581.0" layoutX="10.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true" />
+      <Button id="rgb_yuv" fx:id="rgb_yuv" layoutX="27.0" layoutY="23.0" mnemonicParsing="false" onAction="#rgb_to_yuv" text="RGB -----&gt; YUV" />
+      <Button id="yuv_rgb" fx:id="yuv_rgb" layoutX="473.0" layoutY="23.0" mnemonicParsing="false" onAction="#yuv_to_rgb" text="YUV -----&gt;  RGB" />
+      <Label layoutX="284.0" layoutY="60.0" text="After" />
+      <Label layoutX="287.0" layoutY="343.0" text="Before" />
+      <Button id="subsampling" fx:id="subsampling" layoutX="246.0" layoutY="23.0" mnemonicParsing="false" onAction="#subsampling" text="4:2:2 SubSampling" />
+   </children>
+</AnchorPane>
